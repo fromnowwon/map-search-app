@@ -28,6 +28,10 @@
 			line-height: 35px;
 			border-radius: 3px;
 			box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+			&:focus {
+				outline: 1px solid #bbb;
+				box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+			}
 		}
 		.btn-box {
 			position: absolute;

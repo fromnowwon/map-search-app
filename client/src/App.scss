@@ -166,10 +166,7 @@
 }
 
 /* Mobile - Landscape */
-@media (min-width: 576px) {}
-
-/* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 	.search-form-container {
 		position: relative;
 		.search-form {
@@ -186,6 +183,7 @@
 	.map-container {
 		padding: 0 1rem;
 	}
+	
 	.map {
 		width: 60%;
 		height: 500px;
@@ -197,6 +195,11 @@
 			height: 414px;
 		}
 	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
 }
 
 /* Desktop */

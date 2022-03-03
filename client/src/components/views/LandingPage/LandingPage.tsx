@@ -38,6 +38,7 @@ const LandingPage = ():JSX.Element => {
 						</label>
 					</form>
 				</div>
+				{/* 제출한 검색어 넘기기 */}
 				<Map searchKeyword={ Keyword }/>
 			</div>
 		</div>

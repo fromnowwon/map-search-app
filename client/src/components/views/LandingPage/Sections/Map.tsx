@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { propsType } from '../LandingPage';
 
 interface placeType {
@@ -233,9 +233,6 @@ const Map = (props: propsType) => {
 		<div className="map-container">
 			<div className="flex-grid flex-grid--wrap">
 				<div id="map" className="map"></div>
-				{/* <p><em>지도를 확대 또는 축소 해주세요!</em></p> 
-				<p id="result"></p> */}
-				
 				<div id="search-result" className="search-result">
 					<p className="result-text">
 						<span className="result-keyword">{ props.searchKeyword }</span>

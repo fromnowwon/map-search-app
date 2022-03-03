@@ -14,10 +14,15 @@ const LandingPage = ():JSX.Element => {
 		setValue(e.target.value);
 	}
 
-	const submitKeyword = async (e: { preventDefault: () => void; }) => {
+	const submitKeyword = (e: { preventDefault: () => void; }) => {
 		e.preventDefault();
-		console.log(Value)
 		setKeyword(Value);
+	}
+
+	const valueChecker = () => {
+		if (Value === "") {
+			alert ("검색어를 입력해주세요.")
+		}
 	}
 
 	return (
@@ -28,7 +33,7 @@ const LandingPage = ():JSX.Element => {
 						<label htmlFor="place" className="form__label">
 							<input type="text" id="movie-title" className="form__input" name="place" onChange={ keywordChange } placeholder="검색어를 입력해주세요. (ex: 강남 맛집)" required />
 							<div className="btn-box">
-								<input className="btn form__submit" type="submit" value="검색"/>
+								<input className="btn form__submit" type="submit" value="검색" onClick={ valueChecker }/>
 							</div>
 						</label>
 					</form>

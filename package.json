@@ -3,18 +3,12 @@
 	"name": "covid-19-vaccination-center",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
-	"engine": {
-		"node": "17.3.0",
-		"npm": "8.3.0"
-	},
 	"scripts": {
 		"start": "node server/index.js",
 		"backend": "nodemon server/index.js",
 		"frontend": "npm run front --prefix client",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
 		"deploy": "gh-pages -d ./client/build",
 		"predeploy": "npm run build --prefix client"
 	},
@@ -22,10 +16,7 @@
 	"author": "Chaewon J",
 	"license": "ISC",
 	"dependencies": {
-		"axios": "^0.26.0",
 		"create-react-app": "^5.0.0",
-		"dotenv": "^16.0.0",
-		"express": "^4.17.3",
 		"gh-pages": "^3.2.3"
 	},
 	"devDependencies": {

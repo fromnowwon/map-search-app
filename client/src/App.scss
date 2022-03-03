@@ -186,6 +186,21 @@
 	
 	.map {
 		width: 60%;
+		height: calc(100vh - 71px);
+	}
+
+	.search-result {
+		width: 40%;
+		.scroll-wrapper {
+			height: calc(100vh - 157px);
+		}
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.map {
+		width: 60%;
 		height: 500px;
 	}
 
@@ -195,11 +210,6 @@
 			height: 414px;
 		}
 	}
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-
 }
 
 /* Desktop */

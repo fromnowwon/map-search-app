@@ -73,3 +73,6 @@ input[type=text], input[type=button] {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 }
+input:focus {
+	outline: 1px solid #bbb;
+}

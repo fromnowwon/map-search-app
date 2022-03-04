@@ -26,10 +26,10 @@
 		.form__input {
 			display: block;
 			width: 100%;
-			height: 35px;
+			height: 45px;
 			padding: 0 15px 0 35px;
-			font-size: 0.75rem;
-			line-height: 35px;
+			font-size: 0.875rem;
+			line-height: 45px;
 			border-radius: 3px;
 			box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 			&:focus {
@@ -42,7 +42,7 @@
 			left: 0;
 			top: 0;
 			width: 33px;
-			height: 35px;
+			height: 45px;
 			.btn {
 				width: 100%;
 				height: 100%;
@@ -78,10 +78,10 @@
 
 .search-result {
 	width: 100%;
-	height: calc(100vh - 250px);
+	height: 100%;
 	.result-text {
 		padding: 0.75rem;
-		font-size: 0.75rem;
+		font-size: 0.9375rem;
 		background-color: #ecf4f7;
 		.result-keyword {
 			margin-right: 0.25rem;
@@ -156,9 +156,6 @@
 		}
 	}
 	.pagination {
-		position: absolute;
-		bottom:0;
-		right: 0;
 		width: 100%;
 		height: 50px;
 		padding: 0.5rem;
@@ -209,10 +206,7 @@
 	.search-result {
 		width: 40%;
 		.scroll-wrapper {
-			height: calc(100vh - 157px);
-		}
-		.pagination {
-			width: 40%;
+			height: 414px;
 		}
 	}
 }
@@ -223,13 +217,6 @@
 		.map {
 			width: 60%;
 			height: 500px;
-		}
-	}
-	
-	.search-result {
-		width: 40%;
-		.scroll-wrapper {
-			height: 414px;
 		}
 	}
 }

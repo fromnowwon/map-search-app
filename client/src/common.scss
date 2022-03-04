@@ -59,7 +59,14 @@ input {
 	border: 1px solid #bbb;
 }
 
+input,
+textarea,
+select {
+	font-size: 16px;
+}
+
 button {
 	display: block;
 	border: 1px solid #bbb;
 }
+

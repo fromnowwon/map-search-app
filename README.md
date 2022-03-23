@@ -4,7 +4,7 @@
 
 <br/>
 
-![](./public/images/kakao-api-map-search-app-16_9.gif)
+![](./client/public/images/kakao-api-map-search-app-16_9.gif)
 
 <br />
 

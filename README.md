@@ -2,6 +2,10 @@
 
 📎 [Demo](https://fromnowwon.github.io/map-search-app/)
 
+<br/>
+
+![](./public/images/kakao-api-map-search-app-16_9.gif)
+
 <br />
 
 ## Introduce
@@ -13,3 +17,34 @@ Kakao API를 활용한 지도 검색 앱입니다.
 - Backend: -
 - DB: -
 
+## Tree
+```
+map-search-app
+├── README.md
+├── client
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── images
+│   │   │   ├── kakao-api-map-search-app-16_9.gif
+│   │   │   ├── search-ico.png
+│   │   │   └── spot-ico.png
+│   │   ├── index.html
+│   │   └── robots.txt
+│   ├── src
+│   │   ├── App.scss
+│   │   ├── App.tsx
+│   │   ├── common.scss
+│   │   ├── components
+│   │   │   ├── Config.js
+│   │   │   └── views
+│   │   │       └── LandingPage
+│   │   │           ├── LandingPage.tsx
+│   │   │           └── Sections
+│   │   │               └── Map.tsx
+│   │   ├── index.scss
+│   │   └── index.tsx
+│   └── tsconfig.json
+├── package-lock.json
+└── package.json
+```

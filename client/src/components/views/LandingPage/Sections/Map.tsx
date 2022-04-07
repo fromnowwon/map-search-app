@@ -222,10 +222,9 @@ const Map = (props: propsType) => {
 
 		// 검색결과 목록의 자식 Element를 제거하는 함수입니다
 		function removeAllChildNods(el: HTMLElement) {
-				while (el.hasChildNodes()) {
-					el.lastChild &&
-					el.removeChild (el.lastChild);
-				}
+			while (el.hasChildNodes()) {
+				el.lastChild && el.removeChild(el.lastChild);
+			}
 		}
 
 	}, [props.searchKeyword])

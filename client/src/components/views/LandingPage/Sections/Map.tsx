@@ -16,6 +16,7 @@ const Map = (props: propsType) => {
 	let markers: any[] = [];
 	
 	useEffect(() => {
+		// 개발자 페이지에서 도메인 설정을 local 주소로 바꿔야 개발 모드에서 보입니다.
 		const mapContainer = document.getElementById("map");
 		const mapOption = {
 						center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표

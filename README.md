@@ -24,31 +24,22 @@ Kakao API를 활용한 지도 검색 앱입니다. <br/>
 ## Tree
 ```
 map-search-app
-├── README.md
-├── client
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── public
-│   │   ├── images
-│   │   │   ├── kakao-api-map-search-app-16_9.gif
-│   │   │   ├── search-ico.png
-│   │   │   └── spot-ico.png
-│   │   ├── index.html
-│   │   └── robots.txt
-│   ├── src
-│   │   ├── App.scss
-│   │   ├── App.tsx
-│   │   ├── common.scss
-│   │   ├── components
-│   │   │   ├── Config.js
-│   │   │   └── views
-│   │   │       └── LandingPage
-│   │   │           ├── LandingPage.tsx
-│   │   │           └── Sections
-│   │   │               └── Map.tsx
-│   │   ├── index.scss
-│   │   └── index.tsx
-│   └── tsconfig.json
-├── package-lock.json
-└── package.json
+└── client
+    ├── public (정적 자원 관리)
+    │   ├── images (이미지 관리)
+    │   └── index.html (지도 API 코드 입력)
+    ├── src
+    │   ├── App.tsx (컴포넌트 구성)
+    │   ├── index.tsx (App.tsx와 index.html 연결)
+    │   ├── App.scss (컴포넌트 스타일)
+    │   ├── common.scss (공통 스타일)
+    │   ├── index.scss (글로벌 스타일)
+    │   └── components
+    │       └── views
+    │           └── LandingPage
+    │               ├── LandingPage.tsx
+    │               └── Sections
+    │                   └── Map.tsx (지도 영역)
+    ├── package.json
+    └── tsconfig.json
 ```

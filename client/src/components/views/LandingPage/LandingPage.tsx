@@ -13,7 +13,6 @@ const LandingPage = ():JSX.Element => {
 	// debounce 최적화
 	const debouncedSearch = useMemo(() => debounce((query) => {
 		setValue(query);
-		console.log(query)
 	}, 200), [ value ]);
 
 	const keywordChange = (e: { target: { value: string; }; }) => {

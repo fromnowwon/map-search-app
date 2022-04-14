@@ -10,13 +10,8 @@ const LandingPage = ():JSX.Element => {
 	const [value, setValue] = useState("");
 	const [keyword, setKeyword] = useState("");
 
-	// debounce 최적화
-	const debouncedSearch = useMemo(() => debounce((query) => {
-		setValue(query);
-	}, 200), [ value ]);
-
-	const keywordChange = (e: { target: { value: string; }; }) => {
-		debouncedSearch(e.target.value);
+	const keywordChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
+		setValue(e.target.value)
 	}
 	
 	const submitKeyword = (e: { preventDefault: () => void; }) => {

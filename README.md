@@ -22,8 +22,8 @@ Kakao API를 활용한 지도 검색 앱입니다. <br/>
 <br/>
 
 ## 최적화
-- 검색 폼 Lodash Debounce 메서드 적용하여 onChange 불필요한 이벤트 발생 제한
-- 검색 폼 useMemo 적용하여 값 재사용
+- 검색 폼에 Lodash Debounce 메서드 적용하여 onChange 불필요한 이벤트 호출 제한
+- 검색 폼에 useMemo 적용하여 리턴 값 재사용
 
 
 <br />

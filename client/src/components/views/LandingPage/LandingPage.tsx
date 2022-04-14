@@ -1,26 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import Map from './Sections/Map';
+import { debounce } from 'lodash'
 
 export interface propsType {
 	searchKeyword: string
 }
 
 const LandingPage = ():JSX.Element => {
-	const [Value, setValue] = useState("");
-	const [Keyword, setKeyword] = useState("");
+	const [value, setValue] = useState("");
+	const [keyword, setKeyword] = useState("");
 
-	const keywordChange = (e: { preventDefault: () => void; target: { value: string }; }) => {
-		e.preventDefault();
-		setValue(e.target.value);
+	const debouncedSearch = useMemo(() => debounce((query) => {
+		setValue(query);
+		console.log(query)
+	}, 200), [ value ]);
+
+	const keywordChange = (e: { target: { value: string; }; }) => {
+		debouncedSearch(e.target.value);
 	}
-
+	
 	const submitKeyword = (e: { preventDefault: () => void; }) => {
 		e.preventDefault();
-		setKeyword(Value);
+		setKeyword(value);
 	}
 
 	const valueChecker = () => {
-		if (Value === "") {
+		if (value === "") {
 			alert ("검색어를 입력해주세요.")
 		}
 	}
@@ -39,7 +44,7 @@ const LandingPage = ():JSX.Element => {
 					</form>
 				</div>
 				{/* 제출한 검색어 넘기기 */}
-				<Map searchKeyword={ Keyword }/>
+				<Map searchKeyword={ keyword }/>
 			</div>
 		</div>
 	)
